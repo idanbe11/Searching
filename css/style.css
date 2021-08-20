@@ -20,36 +20,67 @@ margin: 60px 316px 50px 316px;
 visibility: hidden;
 box-shadow: 0 3px 5px 0 rgb(154 160 185 / 5%), 0 10px 20px 0 rgb(166 173 201 / 20%);
 
-
-
 }
 
-/*  icon color  */
-.num{
-direction: rtl;
-height: 31px;
-width: 35px;
-line-height: 25px;
-position: absolute;
-margin-right: -86.5%;
-border-radius: 50px;
-color: #0fca80;
-text-align: center;
-border: 2px solid #0fca80;
-font-family: Rubik;
-font-size: 18px;
-font-weight: 500;
-}
 
-/*  icon number  */
-.number{
-direction: rtl;
-line-height: 25px;
-color:blue;
-text-align: center;
-font-size: 22px;
-font-weight: 540;
-}
+.step2{
+  background-color: white;
+  padding: 50px 50px 50px 50px;
+  margin: 60px 316px 50px 316px;
+  visibility: hidden;
+  box-shadow: 0 3px 5px 0 rgb(154 160 185 / 5%), 0 10px 20px 0 rgb(166 173 201 / 20%);
+  
+  }
+  .new-place-wrapper-steps2 {
+    animation-name: newplace;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.8s;
+    animation-timing-function: linear;
+    overflow: hidden;
+  }
+
+  .step2  {
+ 
+    animation-name: newplace;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.8s;
+    animation-timing-function: linear;
+    overflow: hidden;
+  
+  
+    visibility: hidden;
+    animation:  0s linear 2.8s forwards container-btn;
+  }
+  
+  
+  
+  @keyframes  new-place-wrapper-steps2 {
+    0% {
+      max-height: 0px;
+    }
+    100% {
+      max-height: 410px;
+    
+    }
+  }
+ 
+
+@keyframes steps2 {
+  from { 
+   max-height: 0px;
+   }
+   to { 
+     background-color: white;
+     padding: 50px 50px 50px 50px;
+     margin: 60px 316px 50px 316px;
+     visibility: visible;
+     max-height: 410px;
+   }
+ }
+ 
+ 
 
 /*  title h2 (בחרו אחד מתת הקטגוריות לפרסום מודעת החיפוש.)*/
 .titles{
@@ -69,30 +100,10 @@ float: right;
 
 
 
-@keyframes roll {
-  from { 
-    transform: translateY(90px) ;
-  }
-  to { 
-    right: 119%;
-
-    transform: translate(300px, 90px) rotate(-359deg);
-  }
-}
 
 
-.num  {
-  height: 31px;
-  width: 35px;
-  right: 87%;
 
 
-  color: #0fca80;
-
-  border-radius: 50%;
-  
-  animation: roll 2.6s  ease forwards;
-}
 
 
 
@@ -124,22 +135,22 @@ float: right;
   animation-name: newplace;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
   animation-timing-function: linear;
   overflow: hidden;
 }
-.container-btn{
+.container-btn  {
  
   animation-name: newplace;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
   animation-timing-function: linear;
   overflow: hidden;
 
 
   visibility: hidden;
-  animation:  0s linear 3.1s forwards container-btn ;
+  animation:  0s linear 2s forwards container-btn ;
 }
 
 
@@ -299,5 +310,6 @@ float: right;
 
           }
         }
+       
        
        
