@@ -1,0 +1,108 @@
+.inputemail{
+    margin-left: 76.3% ;
+    border: 1px transparent solid;
+    background-clip: padding-box;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0.6285714286em 0.3857142857em;
+    word-break: normal;
+    line-height: inherit;
+    border-color: #d9d9d9;
+}
+.firstname{
+    margin-left: 82.3% ;
+    background-clip: padding-box;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.7285714286em 0.4857142857em;
+    word-break: normal;
+    line-height: inherit;
+    border-color: #d9d9d9;
+}
+.lastname{
+    position: absolute;
+    margin-top:0.01%;
+    margin-right: -81.9% ;
+    background-clip: padding-box;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.7285714286em 0.4857142857em;
+    word-break: normal;
+    line-height: inherit;
+    border-color: #d9d9d9;
+}
+.postal{
+    position: absolute;
+    margin-right: -81.9% ;
+    margin-top:0.01%;
+    background-clip: padding-box;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.7285714286em 0.4857142857em;
+    word-break: normal;
+    line-height: inherit;
+    border-color: #d9d9d9;
+}
+.address{
+        margin-left: 68% ;
+        background-clip: padding-box;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 0.7285714286em 0.4857142857em;
+        word-break: normal;
+        line-height: inherit;
+        border-color: #d9d9d9;
+}
+.colorblack{
+        color:black;
+        margin-left: 85% ;
+        margin-top: 1.7% ;
+
+    }
+.btn:hover, .sp-modal-toggle:hover {
+    background-color: #2261a3;
+    color: white;
+}
+.btn, .sp-modal-toggle {
+    cursor: pointer;
+    display: inline-block;
+    background-clip: border-box;
+    box-sizing: border-box;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 1.4em 1.7em;
+    text-align: center;
+    position: relative;
+    background-color: #007bff;
+    color: white; 
+    margin-left: 60%;
+    margin-top: 2%;
+}
+.selectorder{
+    position: absolute;
+    margin-top:-1%;
+    margin-left: 80.4% ;
+    background-clip: padding-box;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.7285714286em 0.4857142857em;
+    word-break: normal;
+    line-height: inherit;
+    border-color: #8d8d8d;
+    width: 16%;
+}
+.showprice{
+    position: absolute;
+    margin-top:-3.5%;
+    margin-left: 68% ;
+    background-clip: padding-box;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.7285714286em 0.4857142857em;
+    word-break: normal;
+    line-height: inherit;
+    border-color: #d9d9d9;
+    width: 11.4%;
+}

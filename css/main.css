@@ -1,0 +1,193 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #f9faff;
+  }
+  /*--- LOGO navigation bar ---*/
+  h2{
+    color:black;
+  }
+
+  /*--- explain button on choosePage ---*/
+    .explain {
+      color: black;
+      display: inline-block;
+      border-radius: 30px;
+      border: 2px solid black;
+      padding: 28px 52px;  
+      position: absolute;
+      top: 59.4%;; 
+      left: 820px;
+      font-size: 24px;
+      background: -webkit-linear-gradient(right,#009de0 , #25d669);
+
+    }
+
+  /*--- navigation bar ---*/
+  .navbar {
+    background: #ffffff;
+  }
+    /*--- navigation bar sell page ---*/
+    
+  
+  .nav-link, .navbar-brand {
+    color:white;
+    cursor: pointer;
+  }
+
+ 
+  .nav-link {
+    margin-right: 0.3em ;
+  }
+  .nav-link:hover {
+    color:white;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  span{
+      color:green;
+  }
+  span.a{
+    color:green;
+    float: left;
+
+}
+
+/*כפתור העלת מודעת מכירה /חיפוש*/
+
+  span.postlink{
+    border-radius: 30px;
+    background-color:#2dce89;
+    font-weight: 600;
+    display:block;
+    font-size: 14.5px;
+    
+}
+/*כפתור המשלוחים בכל עמוד*/
+
+span.Deliveries{
+  border-radius: 30px;
+  background-color: #5e72e4;
+  font-weight: 600;
+  display:block;
+  font-size: 14.5px;
+
+}
+
+/*קישור ליצור מודעה בתוך הפרסומת בדף הבית*/
+.postit{
+  display: inline-block;
+  background-color: green; /*for compatibility with older browsers*/
+	background: #2dce89;
+  font-size: 19px;
+	font-family: sans-serif;
+	font-weight: 100;
+  border-radius: 20px;
+	padding: 11px 21px;
+  position: absolute;
+  top: 397px ;
+  left: 1100px;
+	text-decoration: none;
+  color: #fff;
+
+}
+.postit:hover {
+  color:white;
+  text-decoration: none;
+}
+
+/*Sale & Searching BUTTONS */
+.btn{
+  border-radius: 8px;
+  padding: 80px 125px 80px 125px;
+  background-color:white ;
+  box-shadow: 0 3px 5px 0 rgb(154 160 185 / 5%), 0 10px 20px 0 rgb(166 173 201 / 20%);
+  margin: 280px -400px 10px 520px;
+  font-size: 34px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #5e72e4;
+  color: white;
+}
+
+
+
+
+/*LOGIN Icon*/
+
+  .profile.icon {
+    cursor: pointer;
+    color:black;
+    position: absolute;
+    margin-top: 1.02%;
+    width: 18px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+    border-radius: 6px 6px 0 0;
+   
+  }
+  .profile.icon:hover{
+      color: white;
+  }
+
+  .profile.icon:before {
+    content: '';
+    position: absolute;
+    left: 16%;
+    top: -10px;
+    width: 10px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+   
+  }
+
+  /* Slide*/
+  
+.mySlides {
+  display: none;
+}
+img {vertical-align: middle;
+  width: 100%;
+  height: 530px;
+  border-radius:  0% 0% 20% 20%;
+  box-shadow: 0 3px 5px 0 rgb(154 160 185 / 5%), 0 10px 20px 0 rgb(166 173 201 / 20%);
+
+}
+
+
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+* {box-sizing: border-box}
+
+.slidetext1 {
+  position: absolute;
+  top: 230px ;
+  left: 1190px;
+}
+.slidetext2 {
+  position: absolute;
+  top: 230px ;
+  left: 1190px;
+}
+
+
+ 

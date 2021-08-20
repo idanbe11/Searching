@@ -1,0 +1,303 @@
+.rtl{
+    direction: rtl;
+}
+
+
+section {
+    display: block;
+}
+.openhidden{
+color: #333;
+margin-bottom: 15px;
+position: relative;
+}
+
+
+.container-btn{
+background-color: white;
+padding: 50px 50px 50px 50px;
+margin: 60px 316px 50px 316px;
+visibility: hidden;
+box-shadow: 0 3px 5px 0 rgb(154 160 185 / 5%), 0 10px 20px 0 rgb(166 173 201 / 20%);
+
+
+
+}
+
+/*  icon color  */
+.num{
+direction: rtl;
+height: 31px;
+width: 35px;
+line-height: 25px;
+position: absolute;
+margin-right: -86.5%;
+border-radius: 50px;
+color: #0fca80;
+text-align: center;
+border: 2px solid #0fca80;
+font-family: Rubik;
+font-size: 18px;
+font-weight: 500;
+}
+
+/*  icon number  */
+.number{
+direction: rtl;
+line-height: 25px;
+color:blue;
+text-align: center;
+font-size: 22px;
+font-weight: 540;
+}
+
+/*  title h2 (בחרו אחד מתת הקטגוריות לפרסום מודעת החיפוש.)*/
+.titles{
+direction: rtl;
+font-family: Rubik;
+margin: 0;
+padding: 0;
+color: #000;
+font-size: 24px;
+font-weight: 300;
+margin-bottom: 20px;
+margin-top: -20px;
+float: right;
+}
+
+
+
+
+
+@keyframes roll {
+  from { 
+    transform: translateY(90px) ;
+  }
+  to { 
+    right: 119%;
+
+    transform: translate(300px, 90px) rotate(-359deg);
+  }
+}
+
+
+.num  {
+  height: 31px;
+  width: 35px;
+  right: 87%;
+
+
+  color: #0fca80;
+
+  border-radius: 50%;
+  
+  animation: roll 2.6s  ease forwards;
+}
+
+
+
+@keyframes container-btn {
+ from { 
+  max-height: 0px;
+  }
+  to { 
+    background-color: white;
+    padding: 50px 50px 50px 50px;
+    margin: 60px 316px 50px 316px;
+    visibility: visible;
+    max-height: 410px;
+  }
+}
+
+
+@keyframes newplace {
+  0% {
+    max-height: 0px;
+  }
+  100% {
+    max-height: 410px;
+  
+  }
+}
+
+.new-place-wrapper {
+  animation-name: newplace;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  overflow: hidden;
+}
+.container-btn{
+ 
+  animation-name: newplace;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  overflow: hidden;
+
+
+  visibility: hidden;
+  animation:  0s linear 3.1s forwards container-btn ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*@media responsive navbar on home page index green*/   
+@media screen and (max-width: 1080px) and (min-width: 768px){ 
+    .navbar-brand:after {
+               
+        content: '';
+        position: absolute;
+        top: -11px;
+        left: 2px;
+        width: calc(700% - 4px);
+        height: 70%;
+        background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+     }
+}
+@media screen and (max-width: 767px) and (min-width: 1px){ 
+    .navbar-brand:after {
+               
+         content: '';
+         position: absolute;
+         top: -11px;
+         left: 2px;
+         width: calc(700% - 4px);
+         height: 70%;
+         background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    }
+} 
+
+          /*@media responsive navbar on upload page*/        
+           @media screen and (max-width: 1080px) and (min-width: 1078px){ 
+
+            .navbar {
+            width: 107.9%;
+
+          }
+        }
+        @media screen and (max-width: 1077px) and (min-width: 1065px){ 
+
+            .navbar {
+            width: 108.6%;
+
+          }
+        }
+        @media screen and (max-width: 1065px) and (min-width: 1050px){ 
+
+            .navbar {
+            width: 109.8%;
+
+          }
+        }
+        @media screen and (max-width: 1050px) and (min-width: 1040px){ 
+
+            .navbar {
+            width: 110.9%;
+
+          }
+        }
+        @media screen and (max-width: 1040px) and (min-width: 1020px){ 
+
+            .navbar {
+            width: 112.3%;
+
+          }
+        }
+        @media screen and (max-width: 1020px) and (min-width: 1000px){ 
+
+            .navbar {
+            width: 113.8%;
+
+          }
+        }
+        @media screen and (max-width: 1010px) and (min-width: 997px){ 
+
+            .navbar {
+            width: 115.1%;
+
+          }
+        }
+        @media screen and (max-width: 997px) and (min-width: 970px){ 
+
+            .navbar {
+            width: 116.5%;
+
+          }
+        }
+        @media screen and (max-width: 980px) and (min-width: 970px){ 
+
+            .navbar {
+            width: 118%;
+
+          }
+        }
+        @media screen and (max-width: 970px) and (min-width: 955px){ 
+
+            .navbar {
+            width: 119.9%;
+
+          }
+        }
+        @media screen and (max-width: 954px) and (min-width: 940px){ 
+
+            .navbar {
+            width: 121.6%;
+
+          }
+        }
+        @media screen and (max-width: 940px) and (min-width: 920px){ 
+
+            .navbar {
+            width: 123.5%;
+
+          }
+        }
+        @media screen and (max-width: 920px) and (min-width: 900px){ 
+
+            .navbar {
+            width: 126.5%;
+
+          }
+        }
+        @media screen and (max-width: 900px) and (min-width: 881px){ 
+
+            .navbar {
+            width: 130.5%;
+
+          }
+        }
+        @media screen and (max-width: 880px) and (min-width: 840px){ 
+
+            .navbar {
+            width: 132.3%;
+
+          }
+        }
+       
+       
