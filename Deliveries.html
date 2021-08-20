@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-anwesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/delivers.css">
+
+    <title>משלוחים</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md" style="background-color: #f9faff;">
+            <a class="navbar-brand" href="index.html"><h2>Searching<span>4</span></h2></a></div>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+              <span class="navbar-toggler-icon"></span></button>
+                <div class="page-header header container-fluid">
+                  <span class="postlink">
+                    <a class="nav-link" href="choosecategory.html">העלה מודעת מכירה/חיפוש</a></span>
+                      <div class="collapse navbar-collapse" id="main-navigation">
+    
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="explain.html" style="color: black;">איך זה עובד בעצם?</a></li>
+        <li class="nav-item">
+      <li><div class="profile icon">
+          <a class="nav-link" href="login.html"></a>
+    
+                    </div>
+                 </li>
+              </li>
+           </ul>
+       </div> 
+    </div>
+ </nav>
+</header>
+
+<h2 class="colorblack">
+    פרטי התקשרות
+</h2><br>
+  
+    
+    <input class="inputemail" placeholder="אימייל"  size="30" dir="rtl"><br>
+    <br>  
+
+
+    <h2 class="colorblack">
+        כתובת חשבונית
+    </h2>
+    <br> 
+    
+<div dir="rtl">
+    <input class="firstname" placeholder="שם פרטי"  size="30" type="text">
+    <input class="lastname"  placeholder="שם משפחה" size="30" type="text"><br><br>
+    <input class="address"   placeholder="כתובת"    size="70" type="text"><br><br><br>
+    <input class="firstname" placeholder="עיר"      size="30" type="text">
+    <input class="postal"    placeholder="מיקוד"    size="30" type="text"><br><br>
+    <input class="address"   placeholder="פלאפון"   size="70" type="text"><br><br><br>
+
+</div>
+
+    
+<select class="selectorder" dir="rtl" name="tot_pin_requested"  onchange="calculateAmount(this.value)" required class="deliverties">
+    <option  value="" disabled selected>בחר סוג משלוח</option>
+    <option  value="15"> משלוח א מגיע באותו יום</option>
+    <option  value="20">משלוח ב 1-2 ימי עסקים</option>
+    <option  value="25">משלוח ג עד שבוע</option>
+    <option  value="30">משלוח ד עד חודש</option>
+    
+</select>
+<br><br>
+<input class="showprice" placeholder="מחיר המשלוח" name="tot_amount" id="tot_amount" type="text" readonly dir="rtl" size="30" type="text">
+
+<button onclick="location.href='Payment.html'" name="button" type="submit" class="step__footer__continue-btn btn"  >
+    <div class="btn__content">המשך לתשלום</div>
+        <use xlink:href="#spinner-button">
+
+</use> </svg></button>
+
+
+<script>
+function calculateAmount(val) {
+                var tot_price = val ;
+                /*display the result*/
+                var divobj = document.getElementById('tot_amount');
+                divobj.value = tot_price;
+            }
+</script>
+</body>
+</html>
