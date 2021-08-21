@@ -35,7 +35,7 @@ box-shadow: 0 3px 5px 0 rgb(154 160 185 / 5%), 0 10px 20px 0 rgb(166 173 201 / 2
     animation-name: newplace;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    animation-delay: 2.8s;
+    animation-delay: 2.9s;
     animation-timing-function: linear;
     overflow: hidden;
   }
@@ -45,13 +45,13 @@ box-shadow: 0 3px 5px 0 rgb(154 160 185 / 5%), 0 10px 20px 0 rgb(166 173 201 / 2
     animation-name: newplace;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    animation-delay: 2.8s;
+    animation-delay: 2.9s;
     animation-timing-function: linear;
     overflow: hidden;
   
   
     visibility: hidden;
-    animation:  0s linear 2.8s forwards container-btn;
+    animation:  0s linear 2.9s forwards container-btn;
   }
   
   
@@ -310,6 +310,5 @@ float: right;
 
           }
         }
-       
        
        
