@@ -243,6 +243,8 @@ img {vertical-align: middle;
 
 }
 
+
+
 .hand2-btn{
   padding: 30px 100px 30px 100px;
   background-color: white;
@@ -338,21 +340,78 @@ img {vertical-align: middle;
 
 
 
-.back a {
+.backside {
 	position: absolute;
 	bottom: 45%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	padding: 0 20px;
   line-height: 2em;
+  text-decoration: none;
+  color: black;
+  margin-left: 200px;
+  cursor: pointer;
+
+}
+.backside:hover{
+  color: #5e72e4;
+}
+
+.back-btn{
+cursor: pointer;
+line-height: 2em;
+bottom: 45%;
+text-decoration: none;
+position: absolute;
+left: 60px;
+color: black;
+}
+
+.back-btn:hover{
+  color: #5e72e4;
   text-decoration: none;
 
 }
 
+.back_links{
+  font-size: 18px;
 
+  margin-top: 30px;
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  text-align: center;
 
+}
+.back_links:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: #5e72e4;
 
+}
+
+.back_links2{
+  font-size: 18px;
+  margin-left: 0px;
+  margin-top: 100px;
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+
+}
+.back_links2:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: #5e72e4;
+
+}
+article[id*="n"]:target{
+  display: block;
+  
+}
+
+article[id*="n"]:target .used {
+  display: none;
+  
+}
 
 .items-btn{
   padding: 7px 18px 7px 18px;
