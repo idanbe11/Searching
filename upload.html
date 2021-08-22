@@ -68,48 +68,322 @@
 
 <body style="background-color: #f9faff;">
   <section class="rtl"> 
-            
+    <article id="n2">         
                       <div class="new-place-wrapper" data-equalizer>  
-<div class="container-btn">
-<h2 class="titles">בחרו אחד הקטגוריות לפרסום המודעה. </h2>
-  <button  class="btn" type="button">
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  מכירה</button>
+
+<div class="container-btn" id="chatbutton">
+<h2 class="titles"> בחר היכן אתה מעוניין לפרסם את המודעה</h2><br>
+  <button  class="btn" type="button" id="chatbutton" onclick="showDiv(); return false;">מכירה
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  </button>
     
-  <button  class="btn" type="button" >חיפוש 
-    <i class="fa fa-search" aria-hidden="true"></i></button>
+  <button  class="btn" type="button" onclick="showDiv(); return false;"  id="chatbutton">חיפוש 
+    <i class="fa fa-search" aria-hidden="true"></i>  </button>
   </div></div>
 
-  <div class="new-place-wrapper-steps2" data-equalizer>  
-<div class="step2">
-  <h2 class="titles ">אני מפרסם! </h2>
-</div></div>
+  <div id="chatbox" style="display: none;">
+    <div class="new-place-wrapper-steps2" data-equalizer>  
 
-<div class="new-place-wrapper-steps2" data-equalizer>  
+      <div class="step2" id="carbutton">
+       <h2 class="titles"> אני מחפש  </h2>
+
+    <button class="btn" style=" padding: 2px 65px 2px 65px;" id="carbutton"  onclick="showDiv2(); return false;">
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="112.000000pt" height="112.000000pt" viewBox="0 0 572.000000 550.000000"
+    preserveAspectRatio="xMidYMid meet">         
+   <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+   fill="#000000" stroke="none">
+   <path d="M2765 3324 c-317 -33 -491 -90 -931 -304 l-220 -107 -205 -6 c-455
+   -14 -911 -90 -1124 -187 -129 -58 -226 -168 -267 -303 -18 -60 -20 -86 -15
+   -188 4 -90 10 -127 24 -150 35 -60 54 -67 247 -89 98 -11 181 -18 184 -15 3 3
+   -3 24 -12 47 -26 64 -32 190 -12 264 53 205 232 344 441 344 200 0 369 -122
+   435 -315 27 -77 27 -199 0 -275 -11 -30 -19 -58 -20 -62 0 -5 529 -8 1175 -8
+   646 0 1175 2 1175 4 0 2 -6 19 -14 37 -101 243 53 537 316 603 81 20 135 20
+   216 0 180 -45 314 -194 342 -381 11 -68 5 -144 -15 -195 -5 -13 -2 -18 11 -18
+   52 0 414 53 450 66 56 20 97 64 139 146 32 66 35 77 35 163 0 96 -9 137 -45
+   195 -11 19 -43 92 -69 162 -48 127 -69 158 -118 177 -14 5 -113 15 -220 22
+   l-193 12 -105 50 c-318 149 -612 237 -980 294 -92 14 -537 26 -625 17z m525
+   -129 c158 -20 295 -48 385 -78 86 -30 245 -99 245 -108 0 -3 -17 -27 -37 -53
+   l-38 -46 -877 0 c-696 0 -878 3 -878 13 0 6 -6 24 -14 39 -17 31 -15 34 59 71
+   183 91 425 153 710 181 72 7 317 -4 445 -19z"/>
+   <path d="M754 2546 c-98 -32 -181 -108 -228 -206 -28 -59 -31 -74 -31 -165 0
+   -93 2 -105 32 -166 39 -80 111 -150 191 -187 50 -24 69 -27 157 -27 92 0 106
+   3 167 32 156 74 239 230 216 408 -16 120 -100 235 -215 291 -49 24 -71 29
+   -153 31 -59 1 -111 -3 -136 -11z"/>
+   <path d="M3945 2547 c-156 -52 -251 -161 -276 -319 -27 -165 64 -333 221 -407
+   48 -23 68 -26 160 -26 92 0 112 3 160 26 156 74 247 241 221 404 -21 137 -97
+   241 -218 298 -54 25 -82 31 -148 34 -48 2 -96 -2 -120 -10z"/>
+   </g>
+   </svg><br>
+   פרטי</button>
+
+    <button class="btn" style="padding: 2px 65px 2px 65px;" id="carbutton"  onclick="showDiv2(); return false;">
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="112.000000pt" height="112.000000pt" viewBox="0 0 572.000000 550.000000"
+      preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1745 3398 c-81 -288 -154 -535 -161 -549 -8 -15 -28 -32 -45 -38
+-22 -8 -206 -11 -585 -11 l-554 0 0 -160 0 -160 514 0 c344 0 523 -4 544 -11
+26 -9 80 -80 304 -400 l272 -389 345 0 346 0 22 101 c42 192 150 370 301 495
+84 70 241 147 352 174 116 27 284 27 400 0 190 -46 386 -173 497 -325 l22 -30
+1 353 0 352 -690 0 c-379 0 -690 -3 -690 -6 0 -20 -62 -376 -71 -407 -18 -67
+-17 -67 -547 -67 -317 0 -479 4 -501 11 -34 12 -51 35 -51 70 0 13 88 355 195
+760 107 405 195 742 195 748 0 7 -43 11 -133 11 l-133 0 -149 -522z"/>
+<path d="M2260 3420 c-27 -27 -26 -83 2 -128 17 -28 19 -36 7 -43 -8 -4 -45
+-27 -83 -51 l-69 -44 -30 -112 c-16 -62 -27 -115 -25 -118 3 -3 74 38 157 91
+148 93 171 104 171 86 0 -4 11 -20 25 -35 31 -33 94 -37 125 -6 41 41 28 83
+-66 225 -47 72 -93 136 -102 143 -25 19 -89 15 -112 -8z"/>
+<path d="M3140 3420 c-19 -19 -20 -33 -20 -240 l0 -220 80 0 80 0 0 220 c0
+207 -1 221 -20 240 -13 13 -33 20 -60 20 -27 0 -47 -7 -60 -20z"/>
+<path d="M4180 3420 c-19 -19 -20 -33 -20 -240 l0 -220 80 0 80 0 0 220 c0
+207 -1 221 -20 240 -13 13 -33 20 -60 20 -27 0 -47 -7 -60 -20z"/>
+<path d="M4552 3260 c-56 -35 -72 -72 -72 -177 0 -51 4 -93 8 -93 5 0 35 9 67
+20 32 11 70 20 85 20 15 0 53 -9 85 -20 32 -11 62 -20 67 -20 4 0 8 42 8 93 0
+74 -4 98 -20 125 -30 48 -75 72 -140 72 -37 0 -66 -6 -88 -20z"/>
+<path d="M4553 2853 l-73 -25 0 -79 c0 -43 4 -79 8 -79 5 0 35 9 67 20 32 11
+70 20 85 20 15 0 53 -9 85 -20 32 -11 62 -20 67 -20 4 0 8 36 8 79 l0 79 -78
+26 c-42 14 -82 26 -87 25 -6 0 -43 -12 -82 -26z"/>
+<path d="M2420 2620 c-13 -13 -20 -33 -20 -60 0 -27 7 -47 20 -60 18 -18 33
+-20 169 -20 l149 0 11 63 c18 106 33 97 -149 97 -147 0 -162 -2 -180 -20z"/>
+<path d="M4553 2533 l-73 -25 0 -41 c0 -87 66 -147 160 -147 94 0 160 60 160
+147 l0 41 -78 26 c-42 14 -82 26 -87 25 -6 0 -43 -12 -82 -26z"/>
+<path d="M400 2160 l0 -160 128 0 128 0 54 41 c110 83 215 114 361 107 117 -7
+184 -29 278 -93 115 -78 195 -193 231 -332 l11 -43 130 0 131 0 -19 28 c-10
+16 -110 160 -222 320 l-205 292 -503 0 -503 0 0 -160z"/>
+<path d="M3412 2300 c-245 -65 -449 -270 -512 -516 -11 -43 -20 -83 -20 -91 0
+-10 21 -13 85 -13 l84 0 11 43 c46 180 168 321 342 395 58 25 74 27 198 27
+124 0 140 -2 198 -27 174 -74 296 -215 342 -395 l11 -43 84 0 c64 0 85 3 85
+13 0 8 -9 48 -20 91 -63 248 -268 453 -516 516 -103 27 -270 26 -372 0z"/>
+<path d="M913 1986 c-101 -33 -190 -113 -241 -216 -25 -50 -27 -65 -27 -170 0
+-107 2 -119 29 -175 38 -77 114 -153 191 -191 56 -27 68 -29 175 -29 107 0
+119 2 175 29 77 38 153 114 191 191 27 56 29 68 29 175 0 107 -2 119 -29 175
+-38 77 -114 153 -191 190 -52 26 -72 30 -160 32 -64 2 -115 -2 -142 -11z m215
+-172 c153 -63 191 -267 71 -381 -146 -138 -388 -36 -389 165 0 130 99 231 228
+232 29 0 69 -7 90 -16z"/>
+<path d="M980 1660 c-13 -13 -20 -33 -20 -60 0 -53 27 -80 80 -80 27 0 47 7
+60 20 13 13 20 33 20 60 0 53 -27 80 -80 80 -27 0 -47 -7 -60 -20z"/>
+<path d="M3473 1986 c-101 -33 -190 -113 -241 -216 -25 -50 -27 -65 -27 -170
+0 -107 2 -119 29 -175 38 -77 114 -153 191 -191 56 -27 68 -29 175 -29 107 0
+119 2 175 29 77 38 153 114 191 191 27 56 29 68 29 175 0 107 -2 119 -29 175
+-38 77 -114 153 -191 190 -52 26 -72 30 -160 32 -64 2 -115 -2 -142 -11z m215
+-172 c85 -35 142 -120 142 -214 0 -203 -242 -306 -389 -167 -149 142 -49 396
+157 397 29 0 69 -7 90 -16z"/>
+<path d="M3540 1660 c-13 -13 -20 -33 -20 -60 0 -53 27 -80 80 -80 53 0 80 27
+80 80 0 27 -7 47 -20 60 -13 13 -33 20 -60 20 -27 0 -47 -7 -60 -20z"/>
+<path d="M320 1760 l0 -80 85 0 84 0 11 43 c6 23 18 59 25 80 l15 37 -110 0
+-110 0 0 -80z"/>
+<path d="M4480 1760 l0 -80 80 0 80 0 0 80 0 80 -80 0 -80 0 0 -80z"/>
+</g>
+</svg><br>
+      ג'יפים</button>
+
+    <button class="btn" style="margin-left: 80px; padding: 2px 65px 2px 65px;" id="carbutton"  onclick="showDiv2(); return false;">
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="112.000000pt" height="112.000000pt" viewBox="0 0 572.000000 550.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1500 3760 l0 -150 -527 0 -528 0 -223 -503 -222 -502 0 -547 0 -548
+310 0 309 0 19 -42 c115 -254 454 -340 681 -173 65 48 112 105 143 173 l19 42
+929 0 929 0 19 -43 c49 -108 155 -202 269 -237 133 -41 303 -18 397 54 43 32
+49 32 92 0 119 -91 350 -100 481 -18 146 91 223 226 223 388 0 135 -36 229
+-123 323 l-40 43 232 0 231 0 0 945 0 945 -1810 0 -1810 0 0 -150z m-500 -750
+l0 -300 -306 0 c-168 0 -304 4 -302 9 2 4 61 139 133 300 l129 291 173 0 173
+0 0 -300z m2320 -1095 l0 -105 -760 0 -760 0 0 105 0 105 760 0 760 0 0 -105z
+m-2196 -134 c89 -59 89 -183 0 -242 -61 -40 -152 -18 -195 47 -40 61 -18 152
+47 195 38 25 110 25 148 0z m2720 0 c43 -29 66 -70 66 -121 0 -80 -60 -140
+-140 -140 -80 0 -140 60 -140 140 0 80 60 140 140 140 27 0 56 -8 74 -19z
+m600 0 c43 -29 66 -70 66 -121 0 -80 -60 -140 -140 -140 -80 0 -140 60 -140
+140 0 80 60 140 140 140 27 0 56 -8 74 -19z"/>
+</g>
+</svg><br>
+      מסחרי</button><br>
+    <button class="small-btn" id="carbutton"  onclick="showDiv2(); return false;">מיוחדים</button>
+    <button class="small-btn id="carbutton"  onclick="showDiv2(); return false;"">משאיות</button>
+    <button class="small-btn id="carbutton"  onclick="showDiv2(); return false;"">כלי שייט</button>
+    <button class="small-btn id="carbutton"  onclick="showDiv2(); return false;"">אופנועים</button>
+    <button class="small-btn" style="margin-left: 180px;" id="carbutton"  onclick="showDiv2(); return false;">קטנועים</button>
+
+</div></div></div>
+<div id="carbox" style="display: none;">
+<div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;" id="chatbox">  
   <div class="step2">
-    <h2 class="titles ">סוג רכב </h2>
-  </div></div>
+    <h2 class="titles ">סוג רכב </h2><br>
+    <p class="sub-title">מהו היצרן הרכב?</p><br><br>
+    
+    <p class="min-title">יצרן*</p>
+      <select class="select_optiones">
+        <option selected>בחירת יצרן</option>
+        <optgroup label= "א">
+        <option>אאודי</option>
+        <option>אופל</option>
+        <option>אוסטין</option>
+        <option>אינפיניטי</option>
+        <option>אל.טי.איי</option>
+        <option>אלפא רומיאו</option>
+        <option>אסטון מרטין</option>
+        <option>אברת'</option>
+        <option>אם.ג'י</option>
+        <option>אוטוביאנקי</option>
+        <option>אולדסמוביל</option>
+      </optgroup>
 
-  <div class="new-place-wrapper-steps2" data-equalizer>  
+      <optgroup label= "ב">
+        <option>ב.מ.וו</option>
+        <option>בנטלי</option>
+        <option>ביואיק</option>
+      </optgroup>
+
+      <optgroup label= "ג">
+        <option>ג'יפ</option>
+        <option>גרייט וול</option>
+        <option>ג'יאו</option>
+        <option>ג'.איי.סי</option>
+        <option>ג'נסיס</option>
+        <option>גא"ז</option>
+      </optgroup>
+
+      <optgroup label= "ד">
+        <option>די.אס</option>
+        <option>דאצ'יה</option>
+        <option>דייהו</option>
+        <option>דייהטסו</option>
+        <option>דודג'</option>
+      </optgroup>
+
+      <optgroup label= "ה">
+        <option>הונדה</option>
+        <option>האמר</option>
+      </optgroup>
+
+      <optgroup label= "ו">
+        <option>וולוו</option>
+      </optgroup>
+
+      <optgroup label= "ט">
+        <option>טסלה</option>
+        <option>טויוטה</option>
+      </optgroup>
+
+      <optgroup label= "י">
+        <option>יגואר</option>
+        <option>יונדאי</option>
+      </optgroup>
+
+      <optgroup label= "ל">
+        <option>למבורגיני</option>
+        <option>לינקולן</option>
+        <option>לקסוס</option>
+        <option>לאדה</option>
+        <option>ליצ'י</option>
+        <option>לנצ'יה</option>
+      </optgroup>
+
+      <optgroup label= "מ">
+        <option>מאזדה</option>
+        <option>מרצדס</option>
+        <option>מזראטי</option>
+        <option>מיצובישי</option>
+        <option>מיני</option>
+      </optgroup>
+
+      <optgroup label= "נ">
+        <option>ניסן</option>
+        <option>ננג'ינג</option>
+      </optgroup>
+
+      <optgroup label= "ס">
+        <option>סוזוקי</option>
+        <option>סאאב</option>
+        <option>סאנגיונג</option>
+        <option>סובארו</option>
+        <option>סיאט</option>
+        <option>סקודה</option>
+        <option>סאנשיין</option>
+        <option>סיטרואן</option>
+        <option>סמארט</option>
+      </optgroup>
+
+      <optgroup label= "פ">
+        <option>פולקסווגן</option>
+        <option>פורד</option>
+        <option>פיאט</option>
+        <option>פרארי</option>
+        <option>פורשה</option>
+        <option>פונטיאק</option>
+        <option>פיג'ו</option>
+      </optgroup>
+
+      <optgroup label= "ק">
+        <option>קופרה</option>
+        <option>קיה</option>
+        <option>קרייזלר</option>
+        <option>קאדילאק</option>
+      </optgroup>
+
+      <optgroup label= "ר">
+        <option>רנו</option>
+        <option>רובר</option>
+      </optgroup>
+
+      <optgroup label= "ש">
+        <option>שברולט</option>
+      </optgroup>
+      </select><br><br>
+
+    <p class="min-title">דגם*</p>
+      <select class="select_optiones">
+        <option>ss</option> 
+      </select><br><br>
+
+    <p class="min-title">שנה*</p>
+       <select class="select_optiones">
+        <option>ss</option> 
+      </select><br>
+     
+  </div></div></div>
+
+  <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;" id="chatbox">  
     <div class="step2">
       <h2 class="titles ">פרטי הרכב </h2>
     </div></div>
 
-    <div class="new-place-wrapper-steps2" data-equalizer>  
+    <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;">  
       <div class="step2">
         <h2 class="titles ">פרטי מכירה רכב פרטי </h2>
       </div></div>
 
-      <div class="new-place-wrapper-steps2" data-equalizer>  
+      <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;">  
         <div class="step2">
           <h2 class="titles ">הוספת תמונות </h2>
         </div></div>
 
-        <div class="new-place-wrapper-steps2" data-equalizer>  
+        <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;">  
           <div class="step2">
             <h2 class="titles ">פרטי התקשרות </h2>
           </div></div>
     </section>
  
-
+    <script>
+      function showDiv() {
+    document.getElementById('chatbutton').style.display = "none";
+    document.getElementById('chatbox').style.display = "block";
+    document.getElementById('private').style.display ="none";
+  
+      }
+     function showDiv2() {
+  
+    document.getElementById('carbutton').style.display = "none";
+    document.getElementById('carbox').style.display = "block";
+    document.getElementById('private2').style.display ="none";
+      }
+      function showDiv3() {
+  
+  document.getElementById('carbutton').style.display = "none";
+  document.getElementById('carbox').style.display = "block";
+  document.getElementById('private2').style.display ="none";
+    }
+    </script>
 </body>
 </html>
