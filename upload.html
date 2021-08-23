@@ -213,33 +213,33 @@ m600 0 c43 -29 66 -70 66 -121 0 -80 -60 -140 -140 -140 -80 0 -140 60 -140
     <p class="sub-title">מהו היצרן הרכב?</p><br><br>
     
     <p class="min-title">יצרן*</p>
-      <select class="select_optiones">
-        <option selected>בחירת יצרן</option>
+      <select class="select_optiones" id="options">
+        <option selected value="">בחירת יצרן</option>
         <optgroup label= "א">
-        <option>אאודי</option>
-        <option>אופל</option>
-        <option>אוסטין</option>
-        <option>אינפיניטי</option>
-        <option>אל.טי.איי</option>
-        <option>אלפא רומיאו</option>
-        <option>אסטון מרטין</option>
-        <option>אברת'</option>
-        <option>אם.ג'י</option>
-        <option>אוטוביאנקי</option>
-        <option>אולדסמוביל</option>
+        <option value="Option 1">אאודי</option>
+        <option value="Option 2">אופל</option>
+        <option value="Option 3">אוסטין</option>
+        <option value="Option 4">אינפיניטי</option>
+        <option value="Option 5">אל.טי.איי</option>
+        <option value="Option 6">אלפא רומיאו</option>
+        <option value="Option 7">אסטון מרטין</option>
+        <option value="Option 8">אברת'</option>
+        <option value="Option 9">אם.ג'י</option>
+        <option value="Option 10">אוטוביאנקי</option>
+        <option value="Option 11">אולדסמוביל</option>
       </optgroup>
 
       <optgroup label= "ב">
-        <option>ב.מ.וו</option>
-        <option>בנטלי</option>
-        <option>ביואיק</option>
+        <option value="Option 12">ב.מ.וו</option>
+        <option value="Option 13">בנטלי</option>
+        <option value="Option 14">ביואיק</option>
       </optgroup>
 
       <optgroup label= "ג">
-        <option>ג'יפ</option>
-        <option>גרייט וול</option>
-        <option>ג'יאו</option>
-        <option>ג'.איי.סי</option>
+        <option value="Option 15">ג'יפ</option>
+        <option value="Option 16">גרייט וול</option>
+        <option> Geo - ג'יאו</option>
+        <option value="Option 17"> ג'.איי.סי</option>
         <option>ג'נסיס</option>
         <option>גא"ז</option>
       </optgroup>
@@ -332,10 +332,11 @@ m600 0 c43 -29 66 -70 66 -121 0 -80 -60 -140 -140 -140 -80 0 -140 60 -140
       </optgroup>
       </select><br><br>
 
+      <div  >
     <p class="min-title">דגם*</p>
-      <select class="select_optiones">
-        <option>ss</option> 
-      </select><br><br>
+      <select class="select_optiones" id="choices">
+        <option value="" disabled selected>  </option>
+      </select></div><br>
 
     <p class="min-title">שנה*</p>
        <select class="select_optiones">
@@ -366,6 +367,46 @@ m600 0 c43 -29 66 -70 66 -121 0 -80 -60 -140 -140 -140 -80 0 -140 60 -140
     </section>
  
     <script>
+// Map your choices to your option value
+var lookup = {
+   'Option 1': ['A1', 'A3', 'A4' , 'A5' , 'A6' , 'A7' , 'A8' , 'Q3' , 'R8' , 'RS3' , 'RS4' , 'RS5' , 'RS6' , 'RS7' , 'S3' , 'S4' , 'S5' , 'S6' , 'S7' , 'S8' , 'TT' , 'אולרוד' , '100' , '80'],
+   'Option 2': [   'אומגה '  , 'אדם '  ,'אסטרה','אסקונה' , 'אינסיגניה' , 'גרנדלנד x' , 'וקטרה' , 'זאפירה', 'טיגרה', 'מוקה', 'מוקה X', 'מריבה', 'קסקדה', 'קדט', 'קורסה', 'קרוסלנד X'],
+   'Option 3': ['מטרו' , 'מיני ', 'מאסטרו ', 'מונטגו'],
+   'Option 4': ['QX50/EX37' ,'Q70/M37' ,'Q60' , 'Q50 ', 'Q30 ', 'G37'],
+   'Option 5': ['מוניות זוטובוס' ,'TXT' ],
+   'Option 6': ['4C','33', '75', '90', '145' ,'146' ,'147' ,'156' ,'159' ,'JTS.159.3.2' ,'164','166' ,'GT' ,'GTV' ,'בררה', 'ג`וליה' ,'ג`ולייטה', 'מיטו' , 'ספיידר',  'סוד', 'ספרינט' ],
+   'Option 7': ['DB11' ,'DB9' ,'DBS' , 'ונטאג` ', 'ואנקוויש ', 'ראפיד'],
+   'Option 8': ['500' ,'500C' ,'595' , '595C ', ' 124 ספיידר ', 'פונטו איבו'],
+   'Option 9': ['350' ,'550' ,'MG3' , 'RX5 ', 'ZS '],
+   'Option 10': ['Y10' ,'ג`וניור'],
+   'Option 11': ['אורורה' ,'אומגה' ,'דלתא' , 'קטלס '],
+   'Option 12': ['i3' ,'i8' ,'M1' , 'M2 ', 'M3 ', 'M4' , 'M5' , 'M6' , 'M8' , 'X1' , 'X2' , 'X3' , 'X4' , 'X5', 'X6' , 'X7', 'iX' , 'iX3' , 'סדרה 1' , 'סדרה 2' , 'סדרה 3' , 'סדרה 3 קופה/קבריולט' , 'סדרה 4' , 'סדרה 5' , 'סדרה 6' , 'סדרה 7' , 'סדרה 8'],
+   'Option 13': ['GT פליינג ספור' ,'קונטיננטל'],
+   'Option 14': ['לה קרוס' ,'לה סייבר' ,'לוצרן' , 'סאנצ`ורי ', 'פארק אבניו ', 'ריביירה' ,'ריגל '],
+   'Option 15': ['גלדיאטור' ,'גרנד צ`ירוקי' ,'ליברטי' , 'סי ג`יי ', 'פטריוט ', 'צ`וריקי', 'קומפאס' , 'קומנדר' , 'רנגלר' , 'רנגייד '],
+   'Option 16': ['C10' ,'Cool Bear' ,'Florid'],
+   'Option 17': ['G70' ,'G80' ,'G90' ,'GLS'],
+
+};
+
+// When an option is changed, search the above for matching choices
+$('#options').on('change', function() {
+   // Set selected option as variable
+   var selectValue = $(this).val();
+
+   // Empty the target field
+   $('#choices').empty();
+   
+   // For each chocie in the selected option
+   for (i = 0; i < lookup[selectValue].length; i++) {
+      // Output choice in the target field
+      $('#choices').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
+   }
+});
+
+
+
+
       function showDiv() {
     document.getElementById('chatbutton').style.display = "none";
     document.getElementById('chatbox').style.display = "block";
