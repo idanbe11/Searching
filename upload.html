@@ -206,6 +206,7 @@ m600 0 c43 -29 66 -70 66 -121 0 -80 -60 -140 -140 -140 -80 0 -140 60 -140
     <button class="small-btn" id="carbutton"  onclick="showDiv2(); return false;" style="margin-left: 180px;"  >קטנועים</button>
 
 </div></div></div>
+
 <div id="private3">
 <div id="carbox" style="display: none;">
 <div class="new-place-wrapper-steps2">  
@@ -215,40 +216,30 @@ m600 0 c43 -29 66 -70 66 -121 0 -80 -60 -140 -140 -140 -80 0 -140 60 -140
 
     <div id="rechten" class="type-select">
     <p class="min-title">יצרן*</p>
-      <select class="select_optiones" id="select1">
+      <select class="select_optiones" id="select1"  name="rechten">
 
       </select><br><br>
     </div>
 
 
     <select class="select_optiones" style="display: none;" id="select2"></select>
-
-
     <select class="select_optiones" style="display: none;" id="select3"></select>
   
-
-      <div>
-        <div id="pay_block" >
+    <div id="pay_block" style="display:none;">
           <p class="min-title">דגם*</p>
       <select class="select_optiones" id="select4">
+      </div>
 
       </select></div><br>
-      
-      <div id="pay_block2" >
+
+      <div id="pay_block2" style="display:none;">
     <p class="min-title">שנה*</p>
        <select class="select_optiones" id="select5">
-
+       </div>
       </select>
       <br>
     </div>
       
-    <div id=" " >
-      <p class="min-title"> </p>
-         <select class="select_optiones" id=" ">
-  
-        </select>
-        <br>
-      </div>
     <button id="infocarbutton" onclick="showDiv3(); return false;">לשלב הבא</button>
 
   </div></div></div></div>
@@ -756,7 +747,7 @@ select4.addEventListener("change", function () {
 });
 
 
-/*
+
 // Map your choices to your option value
 var lookup = {
    'Option 1': ['בחירת דגם','A1', 'A3', 'A4' , 'A5' , 'A6' , 'A7' , 'A8' , 'Q3' , 'R8' , 'RS3' , 'RS4' , 'RS5' , 'RS6' , 'RS7' , 'S3' , 'S4' , 'S5' , 'S6' , 'S7' , 'S8' , 'TT' , 'אולרוד' , '100' , '80'],
@@ -839,17 +830,17 @@ $('#Model').on('change', function() {
 });
 
 
-*/
+
 
 
 $(function () {
-  $('select#Model').change(function () {
+  $('select#select4').change(function () {
     if ($('#pay_block').css('display')=='none')
         $("#pay_block").slideToggle("slow");
   });
 });
 $(function () {
-  $('select#Car_Model').change(function () {
+  $('select#select5').change(function () {
     if ($('#pay_block2').css('display')=='none')
         $("#pay_block2").slideToggle("slow");
   });
