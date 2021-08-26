@@ -76,7 +76,7 @@
   <button  class="btn" type="button" id="chatbutton" onclick="showDiv(); return false;">מכירה
     <i class="fa fa-shopping-cart" aria-hidden="true"></i>  </button>
     
-  <button  class="btn" type="button" onclick="showDiv(); return false;"  id="chatbutton">חיפוש 
+  <button  class="btn" type="button" id="chatbutton" onclick="showDiv(); return false;" >חיפוש 
     <i class="fa fa-search" aria-hidden="true"></i>  </button>
   </div></div>
 
@@ -200,175 +200,563 @@ m600 0 c43 -29 66 -70 66 -121 0 -80 -60 -140 -140 -140 -80 0 -140 60 -140
 </svg><br>
       מסחרי</button><br>
     <button class="small-btn" id="carbutton"  onclick="showDiv2(); return false;">מיוחדים</button>
-    <button class="small-btn id="carbutton"  onclick="showDiv2(); return false;"">משאיות</button>
-    <button class="small-btn id="carbutton"  onclick="showDiv2(); return false;"">כלי שייט</button>
-    <button class="small-btn id="carbutton"  onclick="showDiv2(); return false;"">אופנועים</button>
-    <button class="small-btn" style="margin-left: 180px;" id="carbutton"  onclick="showDiv2(); return false;">קטנועים</button>
+    <button class="small-btn" id="carbutton"  onclick="showDiv2(); return false;"">משאיות</button>
+    <button class="small-btn" id="carbutton"  onclick="showDiv2(); return false;"">כלי שייט</button>
+    <button class="small-btn" id="carbutton"  onclick="showDiv2(); return false;"">אופנועים</button>
+    <button class="small-btn" id="carbutton"  onclick="showDiv2(); return false;" style="margin-left: 180px;"  >קטנועים</button>
 
 </div></div></div>
+<div id="private3">
 <div id="carbox" style="display: none;">
-<div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;" id="chatbox">  
+<div class="new-place-wrapper-steps2">  
   <div class="step2">
     <h2 class="titles ">סוג רכב </h2><br>
     <p class="sub-title">מהו היצרן הרכב?</p><br><br>
 
     <div id="rechten" class="type-select">
     <p class="min-title">יצרן*</p>
-      <select class="select_optiones" id="options" name="rechten">
-        <option selected value="">בחירת יצרן</option>
-        <optgroup label= "א">
-        <option value="Option 1">אאודי</option>
-        <option value="Option 2">אופל</option>
-        <option value="Option 3">אוסטין</option>
-        <option value="Option 4">אינפיניטי</option>
-        <option value="Option 5">אל.טי.איי</option>
-        <option value="Option 6">אלפא רומיאו</option>
-        <option value="Option 7">אסטון מרטין</option>
-        <option value="Option 8">אברת'</option>
-        <option value="Option 9">אם.ג'י</option>
-        <option value="Option 10">אוטוביאנקי</option>
-        <option value="Option 11">אולדסמוביל</option>
-      </optgroup>
+      <select class="select_optiones" id="select1">
 
-      <optgroup label= "ב">
-        <option value="Option 12">ב.מ.וו</option>
-        <option value="Option 13">בנטלי</option>
-        <option value="Option 14">ביואיק</option>
-      </optgroup>
-
-      <optgroup label= "ג">
-        <option value="Option 15">ג'יפ</option>
-        <option value="Option 16">גרייט וול</option>
-        <option> Geo - ג'יאו</option>
-        <option value="Option 17"> ג'.איי.סי</option>
-        <option value="Option 18">ג'נסיס</option>
-      </optgroup>
-
-      <optgroup label= "ד">
-        <option value="Option 19">די.אס</option>
-        <option value="Option 20">דאצ'יה</option>
-        <option value="Option 21">דייהו</option>
-        <option value="Option 22">דייהטסו</option>
-        <option value="Option 23">דודג'</option>
-      </optgroup>
-
-      <optgroup label= "ה">
-        <option value="Option 24">הונדה</option>
-      </optgroup>
-
-      <optgroup label= "ו">
-        <option value="Option 25">וולוו</option>
-      </optgroup>
-
-      <optgroup label= "ט">
-        <option value="Option 26">טסלה</option>
-        <option value="Option 27">טויוטה</option>
-      </optgroup>
-
-      <optgroup label= "י">
-        <option value="Option 28">יגואר</option>
-        <option value="Option 29">יונדאי</option>
-      </optgroup>
-
-      <optgroup label= "ל">
-        <option>למבורגיני</option>
-        <option value="Option 30">לינקולן</option>
-        <option value="Option 31">לקסוס</option>
-        <option>לאדה</option>
-        <option>ליצ'י</option>
-        <option value="Option 32">לנצ'יה</option>
-      </optgroup>
-
-      <optgroup label= "מ">
-        <option value="Option 33">מאזדה</option>
-        <option value="Option 34">מרצדס</option>
-        <option value="Option 35">מזראטי</option>
-        <option value="Option 36">מיצובישי</option>
-        <option value="Option 37">מיני</option>
-      </optgroup>
-
-      <optgroup label= "נ">
-        <option value="Option 38">ניסאן</option>
-        <option>ננג'ינג</option>
-      </optgroup>
-
-      <optgroup label= "ס">
-        <option value="Option 39">סוזוקי</option>
-        <option value="Option 40">סאאב</option>
-        <option>סאנגיונג</option>
-        <option value="Option 41">סובארו</option>
-        <option value="Option 42">סיאט</option>
-        <option value="Option 43">סקודה</option>
-        <option>סאנשיין</option>
-        <option value="Option 44">סיטרואן</option>
-        <option value="Option 45">סמארט</option>
-      </optgroup>
-
-      <optgroup label= "פ">
-        <option value="Option 46">פולקסווגן</option>
-        <option value="Option 47">פורד</option>
-        <option value="Option 48">פיאט</option>
-        <option value="Option 49">פרארי</option>
-        <option value="Option 50">פורשה</option>
-        <option value="Option 51">פונטיאק</option>
-        <option value="Option 52">פיג'ו</option>
-      </optgroup>
-
-      <optgroup label= "ק">
-        <option>קופרה</option>
-        <option value="Option 53">קיה</option>
-        <option value="Option 54">קרייזלר</option>
-        <option value="Option 55">קאדילאק</option>
-      </optgroup>
-
-      <optgroup label= "ר">
-        <option value="Option 56">רנו</option>
-        <option value="Option 57">רובר</option>
-      </optgroup>
-
-      <optgroup label= "ש">
-        <option value="Option 58">שברולט</option>
-      </optgroup>
       </select><br><br>
     </div>
-      <div id="pay_block" style="display:none;">
-    <p class="min-title">דגם*</p>
-      <select class="select_optiones" id="choices" id="pay_block">
-        <option value="" disabled selected>  </option>
 
+
+    <select class="select_optiones" style="display: none;" id="select2"></select>
+
+
+    <select class="select_optiones" style="display: none;" id="select3"></select>
+  
+
+      <div>
+        <div id="pay_block" >
+          <p class="min-title">דגם*</p>
+      <select class="select_optiones" id="select4">
 
       </select></div><br>
-      <div id="pay_block2" style="display:none;">
+      
+      <div id="pay_block2" >
     <p class="min-title">שנה*</p>
-       <select class="select_optiones">
-        <option>ss</option> 
-      </select><br>
-    </div>
-     
-  </div></div></div>
+       <select class="select_optiones" id="select5">
 
-  <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;" id="chatbox">  
+      </select>
+      <br>
+    </div>
+      
+    <div id=" " >
+      <p class="min-title"> </p>
+         <select class="select_optiones" id=" ">
+  
+        </select>
+        <br>
+      </div>
+    <button id="infocarbutton" onclick="showDiv3(); return false;">לשלב הבא</button>
+
+  </div></div></div></div>
+ 
+  <div id="infocarbox" style="display: none;">
+  <div class="new-place-wrapper-steps2">  
     <div class="step2">
       <h2 class="titles ">פרטי הרכב </h2>
-    </div></div>
+    </div></div></div>
 
-    <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;">  
+    <div id=" " style="display: none;">
+    <div class="new-place-wrapper-steps2" >  
       <div class="step2">
         <h2 class="titles ">פרטי מכירה רכב פרטי </h2>
       </div></div>
 
-      <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;">  
+      <div id=" " style="display: none;">
+      <div class="new-place-wrapper-steps2" >  
         <div class="step2">
           <h2 class="titles ">הוספת תמונות </h2>
         </div></div>
 
-        <div class="new-place-wrapper-steps2" data-equalizer tyle="display: none;">  
+        <div id=" " style="display: none;">
+        <div class="new-place-wrapper-steps2">  
           <div class="step2">
             <h2 class="titles ">פרטי התקשרות </h2>
           </div></div>
     </section>
  
     <script>
+
+    
+
+const input = {
+    "אאודי": {
+      "":{ 
+       "": {
+       "100":[
+                    "1989",
+                    "1990 ",
+                    "1991 ",
+                    "1992 ",
+                    "1993 ",
+                    "1994 "
+                ],
+                "80":[
+                    "1988 ",
+                    "1989 ",
+                    "1990 ",
+                    "1991 ",
+                    "1992 ",
+                    "1993 ",
+                    "1994 ",
+                    "1995 ",
+                ],
+                "A1": [
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "A3": [
+                    "1997 ",
+                    "1998 ",
+                    "1999 ",
+                    "2000 ",
+                    "2001 ",
+                    "2002 ",
+                    "2003 ",
+                    "2004 ",
+                    "2005 ",
+                    "2006 ",
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "A4": [
+                    "1996 ",
+                    "1997 ",
+                    "1998 ",
+                    "1999 ",
+                    "2000 ",
+                    "2001 ",
+                    "2002 ",
+                    "2003 ",
+                    "2004 ",
+                    "2005 ",
+                    "2006 ",
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "A5": [
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "A6": [
+                    "1996 ",
+                    "1997 ",
+                    "1998 ",
+                    "1999 ",
+                    "2000 ",
+                    "2001 ",
+                    "2002 ",
+                    "2003 ",
+                    "2004 ",
+                    "2005 ",
+                    "2006 ",
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "A7": [
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "A8": [
+                    "1996 ",
+                    "1997 ",
+                    "1998 ",
+                    "1999 ",
+                    "2000 ",
+                    "2001 ",
+                    "2002 ",
+                    "2003 ",
+                    "2004 ",
+                    "2005 ",
+                    "2006 ",
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "Q3": [
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "R8": [                 
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",                 
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "RS3": [
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "RS4": [
+                    "2021 "
+                ],
+                "RS5": [
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",                   
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],      
+                "RS6": [               
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",                
+                    "2020 ",
+                    "2021 "
+                ],
+                "RS7": [                 
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "S3": [
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "S4": [
+                    "2005 ",
+                    "2006 ",
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "S5": [
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "S6": [
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                ],
+                "S7": [
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                ],
+                "S8": [
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "TT": [
+                    "2000 ",
+                    "2001 ",
+                    "2002 ",
+                    "2003 ",
+                    "2004 ",
+                    "2005 ",
+                    "2006 ",
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "אולרוד": [
+                    "2001 ",
+                    "2002 ",
+                    "2003 ",
+                    "2004 ",
+                ],
+              
+            }
+        }
+    },
+    "אופל": {
+        "": {
+            "": {
+                "אדם": [  
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "אומגה": [
+                    "1997",
+                    "1998",
+                    "1999",
+                    "2000",
+                    "2001",
+                    "2002",
+                    "2003",
+                ],  
+                "אינסיגניה": [
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+                "אסטרה": [
+                    "1997 ",
+                    "1998 ",
+                    "1999 ",
+                    "2000 ",
+                    "2001 ",
+                    "2002 ",
+                    "2003 ",
+                    "2004 ",
+                    "2005 ",
+                    "2006 ",
+                    "2007 ",
+                    "2008 ",
+                    "2009 ",
+                    "2010 ",
+                    "2011 ",
+                    "2012 ",
+                    "2013 ",
+                    "2014 ",
+                    "2015 ",
+                    "2016 ",
+                    "2017 ",
+                    "2018 ",
+                    "2019 ",
+                    "2020 ",
+                    "2021 "
+                ],
+            }
+        },
+    }
+}
+
+var select1 = document.getElementById("select1");
+var select4 = document.getElementById("select4");
+var select5 = document.getElementById("select5");
+
+function createSelect(params, select_dom) {
+    select_dom.innerHTML = "";
+    var first_child = null;
+    for (const key in params) {
+        if (first_child == null) first_child = params[key];
+        var option = document.createElement("option");
+        if (params.constructor === Array)
+            option.text = params[key]
+        else
+            option.text = key;
+        select_dom.add(option);
+    }
+    return first_child;
+}
+
+function initSelect(params, list_dom) {
+    var small_input = params;
+    for (let index = 0; index < list_dom.length; index++) {
+        const element = list_dom[index];
+        if (small_input) {
+            small_input = createSelect(small_input, element);
+        }
+    }
+}
+
+initSelect(input, [select1, select2, select3, select4, select5])
+
+select1.addEventListener("change", function () {
+    initSelect(input[select1.value], [select2, select3, select4, select5])
+});
+select2.addEventListener("change", function () {
+    initSelect(input[select1.value][select2.value], [select3, select4, select5])
+});
+select3.addEventListener("change", function () {
+    initSelect(input[select1.value][select2.value][select3.value], [select4, select5])
+});
+select4.addEventListener("change", function () {
+    initSelect(input[select1.value][select2.value][select3.value][select4.value], [select5])
+});
+
+
+/*
 // Map your choices to your option value
 var lookup = {
    'Option 1': ['בחירת דגם','A1', 'A3', 'A4' , 'A5' , 'A6' , 'A7' , 'A8' , 'Q3' , 'R8' , 'RS3' , 'RS4' , 'RS5' , 'RS6' , 'RS7' , 'S3' , 'S4' , 'S5' , 'S6' , 'S7' , 'S8' , 'TT' , 'אולרוד' , '100' , '80'],
@@ -431,34 +819,43 @@ var lookup = {
    'Option 58': ['בחירת דגם',' אבאו' ,' אופטרה' ,' אורלנדו' , ' אימפלה ',' אלרו' ,' אפיקה',' אפלנדר',' אקווינוקס',' בולט EV',' ברטה',' וולט',' ויואנט',' טראקס',' לומינה',' מאליבו',' מונטה קרלו',' סוניק',' סיליבריטי',' ספארק',' קאמארו',' קוואליר',' קורבט',' קורבט Z06',' קורסיקה',' קפריס',' קרוז',' קרוז החדשה'],
 
 };
+
+
+
+
+// When an option is changed, search the above for matching choices
+$('#Model').on('change', function() {
+   // Set selected option as variable
+   var selectValue = $(this).val();
+
+   // Empty the target field
+   $('#Car_Model').empty();
+   
+   // For each chocie in the selected option
+   for (i = 0; i < lookup[selectValue].length; i++) {
+      // Output choice in the target field
+      $('#Car_Model').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
+   }
+});
+
+
+*/
+
+
 $(function () {
-  $('select#options').change(function () {
+  $('select#Model').change(function () {
     if ($('#pay_block').css('display')=='none')
         $("#pay_block").slideToggle("slow");
   });
 });
 $(function () {
-  $('select#choices').change(function () {
+  $('select#Car_Model').change(function () {
     if ($('#pay_block2').css('display')=='none')
         $("#pay_block2").slideToggle("slow");
   });
 });
 
 
-// When an option is changed, search the above for matching choices
-$('#options').on('change', function() {
-   // Set selected option as variable
-   var selectValue = $(this).val();
-
-   // Empty the target field
-   $('#choices').empty();
-   
-   // For each chocie in the selected option
-   for (i = 0; i < lookup[selectValue].length; i++) {
-      // Output choice in the target field
-      $('#choices').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
-   }
-});
 
 
 
@@ -477,10 +874,15 @@ $('#options').on('change', function() {
       }
       function showDiv3() {
   
-  document.getElementById('carbutton').style.display = "none";
-  document.getElementById('carbox').style.display = "block";
-  document.getElementById('private2').style.display ="none";
+  document.getElementById('infocarbutton').style.display = "none";
+  document.getElementById('infocarbox').style.display = "block";
+  document.getElementById('private3').style.display ="none";
     }
+
+    
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
 </html>
