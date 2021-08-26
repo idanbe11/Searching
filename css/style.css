@@ -98,7 +98,7 @@ float: right;
 
 
 
-
+/* change the white container (board) in upload page*/
 @keyframes container-btn {
  from { 
   max-height: 0px;
@@ -106,9 +106,9 @@ float: right;
   to { 
     background-color: white;
     padding: 50px 50px 50px 50px;
-    margin: 60px 316px 50px 316px;
+    margin: 60px 316px 50px 390px;
     visibility: visible;
-    max-height: 500px;
+    max-height: 1000px;
   }
 }
 
@@ -118,7 +118,7 @@ float: right;
     max-height: 0px;
   }
   100% {
-    max-height: 500px;
+    max-height: 900px;
   
   }
 }
